@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.135.3.73:9085/WSBanescoBCON/services?wsdl" uri="wsdl/10.135.3.73_9085/WSBanescoBCON/services.wsdl"/>
+    <system systemId="http://10.135.3.73:9085/WSBanescoBCON/services?xsd=1" uri="wsdl/10.135.3.73_9085/WSBanescoBCON/services.xsd_1.xsd"/>
+    <system systemId="http://10.135.3.73:9085/WSBanescoBCON/services?xsd=2" uri="wsdl/10.135.3.73_9085/WSBanescoBCON/services.xsd_2.xsd"/>
+    <system systemId="http://10.135.3.73:9085/WSBanescoBCON/services?xsd=3" uri="wsdl/10.135.3.73_9085/WSBanescoBCON/services.xsd_3.xsd"/>
+    <system systemId="http://10.135.3.73:9085/WSBanescoBCON/services?xsd=4" uri="wsdl/10.135.3.73_9085/WSBanescoBCON/services.xsd_4.xsd"/>
+    <system systemId="http://172.16.27.40:84/WSBanescoBCON/services?wsdl" uri="wsdl/172.16.27.40_84/WSBanescoBCON/services.wsdl"/>
+    <system systemId="http://172.16.27.40:84/WSBanescoBCON/services?xsd=1" uri="wsdl/172.16.27.40_84/WSBanescoBCON/services.xsd_1.xsd"/>
+    <system systemId="http://172.16.27.40:84/WSBanescoBCON/services?xsd=2" uri="wsdl/172.16.27.40_84/WSBanescoBCON/services.xsd_2.xsd"/>
+    <system systemId="http://172.16.27.40:84/WSBanescoBCON/services?xsd=3" uri="wsdl/172.16.27.40_84/WSBanescoBCON/services.xsd_3.xsd"/>
+    <system systemId="http://172.16.27.40:84/WSBanescoBCON/services?xsd=4" uri="wsdl/172.16.27.40_84/WSBanescoBCON/services.xsd_4.xsd"/>
+    <system systemId="http://172.16.27.40:84/WSBanescoBCON/services?xsd=5" uri="wsdl/172.16.27.40_84/WSBanescoBCON/services.xsd_5.xsd"/>
+</catalog>

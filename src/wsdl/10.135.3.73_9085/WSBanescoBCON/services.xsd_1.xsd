@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980. --><xs:schema xmlns:tns="http://temenos.com/WSBanescoBCON" xmlns:ns2="http://temenos.com/BUILDCONTROLRESULTS" xmlns:ns1="http://temenos.com/BUILDCONTROL" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://temenos.com/WSBanescoBCON">
+
+<xs:import namespace="http://temenos.com/BUILDCONTROL" schemaLocation="http://172.16.27.40:84/WSBanescoBCON/services?xsd=4"></xs:import>
+
+<xs:import namespace="http://temenos.com/BUILDCONTROLRESULTS" schemaLocation="http://172.16.27.40:84/WSBanescoBCON/services?xsd=2"></xs:import>
+
+<xs:element name="CreateBconPhysicUnit" type="tns:CreateBconPhysicUnit"></xs:element>
+
+<xs:element name="CreateBconPhysicUnitResponse" type="tns:CreateBconPhysicUnitResponse"></xs:element>
+
+<xs:element name="CreateT24BconUnit" type="tns:CreateT24BconUnit"></xs:element>
+
+<xs:element name="CreateT24BconUnitResponse" type="tns:CreateT24BconUnitResponse"></xs:element>
+
+<xs:element name="CreateT24BconUnit_Validate" type="tns:CreateT24BconUnit_Validate"></xs:element>
+
+<xs:element name="CreateT24BconUnit_ValidateResponse" type="tns:CreateT24BconUnit_ValidateResponse"></xs:element>
+
+<xs:element name="ViewtheResultsofaBCONunit" type="tns:ViewtheResultsofaBCONunit"></xs:element>
+
+<xs:element name="ViewtheResultsofaBCONunitResponse" type="tns:ViewtheResultsofaBCONunitResponse"></xs:element>
+
+<xs:complexType name="CreateT24BconUnit">
+<xs:sequence>
+<xs:element name="WebRequestCommon" type="tns:webRequestCommon" minOccurs="0"></xs:element>
+<xs:element name="OfsFunction" type="tns:ofsFunction" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLType" type="ns1:BUILDCONTROLType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="webRequestCommon">
+<xs:sequence>
+<xs:element name="company" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string"></xs:element>
+<xs:element name="userName" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ofsFunction">
+<xs:sequence>
+<xs:element name="activityName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="assignReason" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="dueDate" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="extProcess" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="extProcessID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="gtsControl" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="messageId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="noOfAuth" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="owner" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="replace" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="startDate" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="user" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CreateT24BconUnitResponse">
+<xs:sequence>
+<xs:element name="Status" type="tns:Status" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLType" type="ns1:BUILDCONTROLType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Status">
+<xs:sequence>
+<xs:element name="transactionId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="messageId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="successIndicator" type="tns:successIndicator" minOccurs="0"></xs:element>
+<xs:element name="application" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="messages" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ViewtheResultsofaBCONunit">
+<xs:sequence>
+<xs:element name="WebRequestCommon" type="tns:webRequestCommon" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLRESULTSType" type="tns:enquiryInput" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="enquiryInput">
+<xs:sequence>
+<xs:element name="enquiryInputCollection" type="tns:enquiryInputCollection" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="enquiryInputCollection">
+<xs:sequence>
+<xs:element name="columnName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="criteriaValue" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="operand" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ViewtheResultsofaBCONunitResponse">
+<xs:sequence>
+<xs:element name="Status" type="tns:Status" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLRESULTSType" type="ns2:BUILDCONTROLRESULTSType" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CreateT24BconUnit_Validate">
+<xs:sequence>
+<xs:element name="WebRequestCommon" type="tns:webRequestCommon" minOccurs="0"></xs:element>
+<xs:element name="OfsFunction" type="tns:ofsFunction" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLType" type="ns1:BUILDCONTROLType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CreateT24BconUnit_ValidateResponse">
+<xs:sequence>
+<xs:element name="Status" type="tns:Status" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLType" type="ns1:BUILDCONTROLType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CreateBconPhysicUnit">
+<xs:sequence>
+<xs:element name="WebRequestCommon" type="tns:webRequestCommon" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLType" type="tns:transactionId" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionId">
+<xs:sequence>
+<xs:element name="transactionId" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CreateBconPhysicUnitResponse">
+<xs:sequence>
+<xs:element name="Status" type="tns:Status" minOccurs="0"></xs:element>
+<xs:element name="BUILDCONTROLType" type="ns1:BUILDCONTROLType" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="successIndicator">
+<xs:restriction base="xs:string">
+<xs:enumeration value="Success"></xs:enumeration>
+<xs:enumeration value="TWSError"></xs:enumeration>
+<xs:enumeration value="T24Error"></xs:enumeration>
+<xs:enumeration value="T24Override"></xs:enumeration>
+<xs:enumeration value="T24Offline"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980. --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://temenos.com/BUILDCONTROL">
+
+<xs:complexType name="BUILDCONTROLType">
+<xs:sequence>
+<xs:element name="gLLDESC" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mLLDESC" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="sgLLDESC" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="DESC" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="MNEMONIC" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="ACTION" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="BCONPRODUCT" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SAVEPATH" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RELEASEPATH" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gPROGRAMBP" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mPROGRAMBP" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="PROGRAMBP" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="sgSELECTCMD" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="SELECTCMD" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="MVRESERVED9" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RELEASEBP" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gJBCDEVLIB" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="JBCDEVLIB" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gJBCDEVBIN" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="JBCDEVBIN" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="OBJNAME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gDEPENDENCY" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="DEPENDENCY" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gOURREFERENCE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mOURREFERENCE" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="OURREFERENCE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="THEIRREFERENCE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="ISSUEDESC" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="OFSSOURCEID" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gDLDEFINE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mDLDEFINE" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="DLDEFINE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="FROMCOMPANY" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="TOCOMPANY" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gLOCREFTABLE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mLOCREFTABLE" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="LOCREFTABLE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="sgLOCALTABLE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="LOCALTABLE" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="LOCALTABLE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="TABLEASSOC" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="s" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gSSAPPLNAME" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mSSAPPLNAME" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="SSAPPLNAME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRFIELDNAME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRTYPE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="sgUSRFIELDNO" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="USRFIELDNO" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="sgUSRVALPROG" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="USRVALPROG" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="USRCONVERSION" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRDISPLAYFMT" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRALTINDEX" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRIDXFILE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRINDEXNULLS" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRSINGLEMULT" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRLANGFIELD" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRCNVTYPE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="USRRELFILE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SSRESVD39" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SSRESVD40" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SSRESVD41" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SSRESVD42" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gBUILDNEWDICT" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="BUILDNEWDICT" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gWSFILENAME" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mWSFILENAME" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="WSFILENAME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="WSRECORDNAME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="GENINSTALLDOC" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED47" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED48" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gUPDTABLENAME" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mUPDTABLENAME" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="UPDTABLENAME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="UPDCOMPANY" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="sgUPDRECORD" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="UPDRECORD" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="UPDRECORD" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="UPDFIELD" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SVRESVD53" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SVRESVD54" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SVRESVD55" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="UPDVALUE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="s" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="MVRESVD57" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="MVRESVD58" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="MVRESVD59" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="RESERVED60" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED61" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED62" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED63" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED64" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED65" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED66" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED67" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED68" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gFILEVOCID" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mFILEVOCID" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="FILEVOCID" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="FILESTOCREATE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gSHELLCMD" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="SHELLCMD" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gRELEASEORDER" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="RELEASEORDER" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="AUTHSPLINSTR" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="CREATELIB" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="CREATEBIN" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="CREATERELBP" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="DLSAVEPATH" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="DLRESTOREPATH" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="PROGRAMOS" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="CLRPROCESSLOG" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gACTIVITY" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mACTIVITY" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ACTIVITY" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="sgPROCESSINFO" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="PROCESSINFO" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gPROCESSERR" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="PROCESSERR" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gSAVEDDATE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mSAVEDDATE" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="SAVEDDATE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SAVEDVERSION" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="SAVEDUSER" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gRELEASEDATE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mRELEASEDATE" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="RELEASEDATE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RELEASEVERSION" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RELEASEUSER" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gRELSTAGE" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="RELSTAGE" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="VIEWREPORT" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="REMOVESOURCE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gPREINSTALL" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mPREINSTALL" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="sgPREINSTALL" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="PREINSTALL" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gPOSTINSTALL" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mPOSTINSTALL" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="sgPOSTINSTALL" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="POSTINSTALL" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="sg" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="DOCIDNEW" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gADDNLSYSREQ" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ADDNLSYSREQ" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="RESERVED97" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED98" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED99" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED100" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RESERVED101" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="BCONFUNCTIONALITY" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="DELOTHERCOMPRECS" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="RECORDSTATUS" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="CURRNO" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="gINPUTTER" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="INPUTTER" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="gDATETIME" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="DATETIME" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+</xs:element>
+<xs:element name="AUTHORISER" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="COCODE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="DEPTCODE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="AUDITORCODE" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+<xs:element name="AUDITDATETIME" type="xs:string" nillable="true" minOccurs="0"></xs:element>
+</xs:sequence>
+<xs:attribute name="id" type="xs:string"></xs:attribute>
+</xs:complexType>
+</xs:schema>
