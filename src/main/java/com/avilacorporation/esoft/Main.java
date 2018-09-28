@@ -155,9 +155,9 @@ public class Main {
                                      System.out.println("OFSSOURCEID " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getOFSSOURCEID() );    
                                    }
                                    
-                                   if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getGDLDEFINE() != null ){
+                                   /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getGDLDEFINE() != null ){
                                      System.out.println("GDLDEFINE " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getGDLDEFINE().getMDLDEFINE() );    
-                                   }
+                                   }*/
                                    
                                    if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getBUILDNEWDICT() != null ){
                                      System.out.println("BUILDNEWDICT " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getBUILDNEWDICT() );    
@@ -199,33 +199,33 @@ public class Main {
                                      System.out.println("CLRPROCESSLOG " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getCLRPROCESSLOG() );    
                                    }
                                    
-                                   if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getACTIVITY() != null ){
+                                   /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getACTIVITY() != null ){
                                      System.out.println("ACTIVITY " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getACTIVITY() );    
-                                   }
+                                   }*/
                                    
-                                    if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getPROCESSINFO() != null ){
+                                    /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getPROCESSINFO() != null ){
                                      System.out.println("PROCESSINFO " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getPROCESSINFO() );    
-                                    }
+                                    }*/
                                     
                                     if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getPROCESSERR() != null ){
                                      System.out.println("PROCESSERR " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getPROCESSERR() );    
                                     }
                                     
-                                    if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEDATE() != null ){
+                                    /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEDATE() != null ){
                                      System.out.println("RELEASEDATE " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEDATE() );    
-                                    }
+                                    }*/
                                     
-                                    if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEVERSION() != null ){
+                                    /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEVERSION() != null ){
                                      System.out.println("RELEASEVERSION " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEVERSION() );    
-                                    }
+                                    }*/
                                     
-                                    if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEUSER() != null ){
+                                    /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEUSER() != null ){
                                      System.out.println("RELEASEUSER " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELEASEUSER() );    
-                                    }
+                                    }*/
                                     
-                                    if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELSTAGE() != null ){
+                                    /*if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELSTAGE() != null ){
                                      System.out.println("RELSTAGE " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getRELSTAGE() );    
-                                    }
+                                    }*/
                                     
                                     if (((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getDATETIME() != null ){
                                      System.out.println("DATETIME " + ((ReverseBconatAppLevelResponse)reverseBconatAppLevelResponse.get()).getBUILDCONTROLType().getDATETIME() );    
